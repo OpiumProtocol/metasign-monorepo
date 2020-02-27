@@ -29,7 +29,7 @@ class MetaSignProvider extends ProviderEngine {
   public async enable() {
     // TODO: client.connect
     console.error('DEBUG: enable()')
-    throw new Error('Not implemented')
+    // throw new Error('Not implemented')
   }
 
   private async _processTypedMessage(data: string) {
