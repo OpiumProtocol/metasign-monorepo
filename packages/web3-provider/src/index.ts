@@ -21,12 +21,12 @@ class MetaSignProvider extends ProviderEngine {
 
   public async enable() {
     // TODO: client.connect
-    console.log('DEBUG: enable')
+    console.log('DEBUG: enable()')
   }
 
   private async _processTypedMessage(data: string) {
     // TODO: client.create
-    console.log('DEBUG: _processTypedMessage')
+    console.log('DEBUG: _processTypedMessage(data)', data)
     return '0x12345678'
   }
 }
