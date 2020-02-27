@@ -9,6 +9,11 @@ class MetaSignProvider extends ProviderEngine {
     super()
     this.addProvider(
       new HookedWalletSubprovider({
+        getAccounts: async (cb: any) => {
+          cb(null, [
+            '0x0000000000000000000000000000000000000000'
+          ]);
+        },
         processTypedMessage: async (msgParams: { data: string }, cb: any) => {
           try {
             const result = await this._processTypedMessage(msgParams.data)
