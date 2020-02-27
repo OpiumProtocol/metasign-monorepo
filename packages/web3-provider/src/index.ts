@@ -3,6 +3,8 @@ import ProviderEngine from 'web3-provider-engine'
 import HookedWalletSubprovider from 'web3-provider-engine/subproviders/hooked-wallet'
 
 class MetaSignProvider extends ProviderEngine {
+  public isMetaSign = true
+
   constructor() {
     super()
     this.addProvider(
@@ -21,12 +23,13 @@ class MetaSignProvider extends ProviderEngine {
 
   public async enable() {
     // TODO: client.connect
-    console.log('DEBUG: enable()')
+    console.error('DEBUG: enable()')
+    throw new Error('Not implemented')
   }
 
   private async _processTypedMessage(data: string) {
     // TODO: client.create
-    console.log('DEBUG: _processTypedMessage(data)', data)
+    console.error('DEBUG: _processTypedMessage(data)', data)
     return '0x12345678'
   }
 }
