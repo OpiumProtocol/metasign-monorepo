@@ -25,5 +25,6 @@
     "@types/web3-provider-engine": "^14.0.0",
     "tsdx": "^0.12.3",
     "typescript": "^3.8.2"
-  }
+  },
+  "gitHead": "9c419f5e437b520bbc7ea7fc6a5b05a1ffc1de23"
 }
