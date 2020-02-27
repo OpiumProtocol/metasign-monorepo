@@ -1,0 +1,5 @@
+# Built libraries
+lib/
+
+# NodeJS
+node_modules/
