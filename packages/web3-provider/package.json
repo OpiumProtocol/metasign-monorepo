@@ -3,7 +3,7 @@
   "version": "0.1.9",
   "description": "> TODO: description",
   "author": "Ali Nuraldin <dev@opium.team>",
-  "homepage": "",
+  "homepage": "https://github.com/OpiumProtocol/metasign-monorepo#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -13,9 +13,16 @@
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpiumProtocol/metasign-monorepo.git"
+  },
   "scripts": {
     "build": "tsc --project .",
     "test": "tsdx test ./__tests__"
+  },
+  "bugs": {
+    "url": "https://github.com/OpiumProtocol/metasign-monorepo/issues"
   },
   "dependencies": {
     "web3-provider-engine": "^15.0.6"
